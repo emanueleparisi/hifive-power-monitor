@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -10,10 +11,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="HiFiveUnmatchedPowerLine.ctl" Type="VI" URL="../HiFiveUnmatchedPowerLine.ctl"/>
-		<Item Name="HiFiveUnmatchedPowerLineConfig.ctl" Type="VI" URL="../HiFiveUnmatchedPowerLineConfig.ctl"/>
-		<Item Name="PowerLineChannel.vi" Type="VI" URL="../PowerLineChannel.vi"/>
-		<Item Name="PowerLineConf.vi" Type="VI" URL="../PowerLineConf.vi"/>
+		<Item Name="Unmatched" Type="Folder">
+			<Item Name="PowerLineId.ctl" Type="VI" URL="../PowerLineId.ctl"/>
+			<Item Name="PowerLineConfig.ctl" Type="VI" URL="../PowerLineConfig.ctl"/>
+			<Item Name="PowerLineQuantity.ctl" Type="VI" URL="../PowerLineQuantity.ctl"/>
+			<Item Name="GetPowerLineConfig.vi" Type="VI" URL="../GetPowerLineConfig.vi"/>
+			<Item Name="MakeChannel.vi" Type="VI" URL="../MakeChannel.vi"/>
+			<Item Name="PXIe4309GetRate.vi" Type="VI" URL="../PXIe4309GetRate.vi"/>
+		</Item>
 		<Item Name="Top.vi" Type="VI" URL="../Top.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
